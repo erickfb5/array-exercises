@@ -1,5 +1,5 @@
 // 04. Write a JavaScript function to get the last element of an array.
-// Passing a parameter 'n' w the last 'n' elements of the arra)y}
+// Passing a parameter 'n' will return the last 'n' elements of the array
 const lastElement = (arr, n) => {
   if (!n) return arr[arr.length - 1];
   return arr.filter((elem, index) =>  index >(arr.length-1)-n && elem)
