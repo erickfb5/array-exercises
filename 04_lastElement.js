@@ -1,0 +1,11 @@
+// 04. Write a JavaScript function to get the last element of an array.
+// Passing a parameter 'n' w the last 'n' elements of the arra)y}
+const lastElement = (arr, n) => {
+  if (!n) return arr[arr.length - 1];
+  return arr.filter((elem, index) =>  index >(arr.length-1)-n && elem)
+}
+
+console.log(lastElement([5, 4, 3, 2, 1]));
+console.log(lastElement([5, 4, 3, 2, 1], 2));
+console.log(lastElement([5, 4, 3, 2, 1],3))
+console.log(lastElement([5, 4, 3, 2, 1],4));
